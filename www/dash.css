@@ -35,6 +35,11 @@ header {
   height: 50px;
   z-index: 9;
   font-weight: 800;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .navbar {
@@ -42,6 +47,11 @@ header {
   background-color: var(--bg-primary);
   transition: width 400ms ease;
   z-index: 20;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .navbar-nav {
@@ -169,15 +179,24 @@ header {
   z-index: 10;
   max-width: 600px;
   align-content: center;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .values {
   color: white;
   margin-top: -150px;
+  user-select: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 #circle {
-  background: rgba(238, 238, 238, 0.9);
+  background: rgb(238, 238, 238);
   position: relative;
   display: none;
   width: 100px;
@@ -189,7 +208,7 @@ header {
   pointer-events: none;
 }
 #zoneCircle {
-  background: rgba(238, 238, 238, 0.9);
+  background: rgb(175, 175, 175);
   position: absolute;
   display: none;
   width: 150px;

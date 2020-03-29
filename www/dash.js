@@ -44,8 +44,8 @@ function modesButton() {
     zone.style.backgroundColor = 'rgba(235, 235, 235, 1)';
     values.style.color = 'black';
     explanation.style.color = 'black';
-    circle.style.background = 'rgba(71, 71, 71, 0.9)';
-    zoneCircle.style.background = 'rgba(71, 71, 71, 0.9)';
+    circle.style.background = 'rgb(30, 30, 30)';
+    zoneCircle.style.background = 'rgb(60, 60, 60)';
     modeButton.style.color = 'yellow';
     mode = 0;
   } else {
@@ -53,8 +53,8 @@ function modesButton() {
     zone.style.backgroundColor = 'rgb(54, 54, 54)';
     values.style.color = 'white';
     explanation.style.color = 'white';
-    circle.style.background = 'rgba(180, 180, 180, 0.9)';
-    zoneCircle.style.background = 'rgba(180, 180, 180, 0.9)';
+    circle.style.background = 'rgb(238, 238, 238)';
+    zoneCircle.style.background = 'rgba(238, 238, 238, 0.95)';
     modeButton.style.color = '#b6b6b6';
     mode = 1;
   }
