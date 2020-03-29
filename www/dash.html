@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joystick</title>
+    <link rel="stylesheet" href="dash.css" />
+    <script type="text/javascript" src="paho/paho-mqtt.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fe92af7c86.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="head">
+      <p class="name">Host: <p id="val_host" class="value">0.0.0.0</p></p>
+      <p class="name">Port: <p id="val_port" class="value">0</p></p>
+      
+    </header>
+
+    <nav class="navbar" id="navbar">
+      <ul class="navbar-nav">
+        <li class="logo">
+          <a href="#" class="nav-link">
+            <span class="link-text logo-text">Options</span>
+            <i class="fas fa-cog fa-5x"></i>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <button
+            class="nav-link"
+            class="btn"
+            id="coordButton"
+            onclick="coordsButton()"
+          >
+            <i class="fas fa-calculator fa-4x"></i>
+            <span class="link-text">Coordinates</span>
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button
+            class="nav-link"
+            class="btn"
+            id="controllerButton"
+            onclick="controllersButton()"
+          >
+            <i class="fas fa-tachometer-alt fa-3x"></i>
+            <span class="link-text">Controller</span>
+          </button>
+        </li>
+
+        <li class="nav-item">
+          <button
+            class="nav-link"
+            class="btn"
+            id="modeButton"
+            onclick="modesButton()"
+          >
+            <i class="fas fa-lightbulb fa-4x"></i>
+            <span class="link-text">Light/Dark</span>
+          </button>
+        </li>
+
+        <li class="nav-item" id="themeButton">
+          <a href="#" class="nav-link">
+            <span class="link-text">Source</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="zone" id="zone">
+      <div id="explanation">
+        <p>
+          Click anywhere on screen to generate joystick. Drag to move joystick
+          around.
+        </p>
+      </div>
+      <div id="zoneCircle" class="zoneCircle">
+        <div id="values" class="values">
+          <div id="ValuesX" class="valuesX">X: <span id="x-value"></span></div>
+          <div id="ValuesY" class="valuesY">Y: <span id="y-value"></span></div>
+        </div>
+      </div>
+      <div id="circle"></div>
+    </div>
+
+    <div class="zone2" id="zone2">
+      <div id="directions"><span id="directions"></span></div>
+      <div class="button-container" id="button-container">
+        <button class="butn" id="up" onclick="moveup()">
+          <i class="fas fa-arrow-up fa-7x"></i></button
+        ><br /><br />
+        <button class="butn" id="left" onclick="moveleft()">
+          <i class="fas fa-arrow-left fa-7x"></i>
+        </button>
+        <button class="butn" id="right" onclick="moveright()">
+          <i class="fas fa-arrow-right fa-7x"></i></button
+        ><br /><br />
+        <button class="butn" id="down" onclick="movedown()">
+          <i class="fas fa-arrow-down fa-7x"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="dash.js"></script>
+  </body>
+</html>
