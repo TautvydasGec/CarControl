@@ -232,7 +232,7 @@ public:
       const char *serial = "/dev/ttyACM0";
 
       bool verbose = false;
-      bool fixbaud = false;
+      bool fixbaud = true;
       bool logger = false;
 
       for (int arg = 1; arg < argc; arg++)
