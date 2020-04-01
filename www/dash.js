@@ -207,9 +207,13 @@ function joyStickControll() {
         distx = 0;
         disty = 0;
       }
+      let sendDistx = (2 * (distx + 75)) / (75 + 75) - 1;
+      let sendDisty = (2 * (disty + 75)) / (75 + 75) - 1;
+
       document.getElementById('x-value').textContent = distx;
       document.getElementById('y-value').textContent = disty;
-      mqtt_send_XY(distx, disty);
+
+      mqtt_send_XY(sendDistx, sendDisty);
     };
 
     /* mouse */
@@ -308,9 +312,13 @@ function joyStickControll() {
         distx = 0;
         disty = 0;
       }
+      let sendDistx = (2 * (distx + 75)) / (75 + 75) - 1;
+      let sendDisty = (2 * (disty + 75)) / (75 + 75) - 1;
+
       document.getElementById('x-value').textContent = distx;
       document.getElementById('y-value').textContent = disty;
-      mqtt_send_XY(distx, disty);
+
+      mqtt_send_XY(sendDistx, sendDisty);
     };
 
     /* Touch */
