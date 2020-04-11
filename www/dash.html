@@ -14,11 +14,14 @@
 
   <body>
     <header class="head">
-      <p class="name">Host: <p id="val_host" class="value">0.0.0.0</p></p>
-      <p class="name">Port: <p id="val_port" class="value">0</p></p>
-      
+      <div class="host"><p class="name">Host: <p id="val_host" class="value">0.0.0.0</p></p></div>
+      <div class="host"><p class="name">Port: <p id="val_port" class="value">0</p></p></div>
+      <button class="stop" id="stop" onclick="stopIt()">STOP</button>
     </header>
 
+    <div class="status" id="status">
+    <p class="status-name" id="status-name">Online </p><div class="status-icon" id="status-icon"></div>
+    </div>
     <nav class="navbar" id="navbar">
       <ul class="navbar-nav">
         <li class="logo">
@@ -89,7 +92,7 @@
     </div>
 
     <div class="zone2" id="zone2">
-      <div id="directions"><span id="directions"></span></div>
+      <!-- <div id="directions"><span id="directions"></span></div> -->
       <div class="button-container" id="button-container">
         <button class="butn" id="up" onclick="moveup()">
           <i class="fas fa-arrow-up fa-7x"></i></button
